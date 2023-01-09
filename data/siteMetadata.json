@@ -1,17 +1,17 @@
 {
-  "title": "Jeffery Moore",
+  "title": "techchef.io",
   "author": "Jeffery Moore",
   "headerTitle": "Jeffery Moore",
   "description": "Thoughts from the field about IT, info and cyber security, development and resilience.",
   "language": "fr-FR",
-  "siteUrl": "https://tambouille.vercel.app",
-  "siteRepo": "https://github.com/aloisdg/tambouille",
+  "siteUrl": "https://techchef.io",
+  "siteRepo": "https://github.com/jefferywmoore/techchef",
   "image": "/static/images/alois.png",
   "socialBanner": "/static/images/twitter-card.png",
-  "email": "alois@outlook.fr",
-  "github": "https://github.com/aloisdg",
-  "twitter": "https://twitter.com/aloisdg",
-  "linkedin": "https://www.linkedin.com",
+  "email": "jeff@jefferywmoore.com",
+  "github": "https://github.com/jefferywmoore",
+  "twitter": "https://twitter.com/jefferywmoore",
+  "linkedin": "https://www.linkedin.com/in/jefferywmoore",
   "rss": "/index.xml",
   "locale": "fr-FR",
 
@@ -19,13 +19,13 @@
     "kim": {
       "slug": "kim",
       "name": "Kim Clarisse",
-      "email": "kim.clarisse@protonmail.com",
+      "email": "jeff@jefferywmoore.com",
       "image": "/static/images/kim.png"
     },
     "alois": {
       "slug": "jeff",
       "name": "Jeff Moore",
-      "email": "alois@outlook.fr",
+      "email": "jeff@jefferywmoore.com",
       "image": "/static/images/alois.png"
     },
     "jeff": {
