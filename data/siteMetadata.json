@@ -1,8 +1,8 @@
 {
-  "title": "Tambouille",
-  "author": "Kim Clarisse & Aloïs de Gouvello",
-  "headerTitle": "Tambouille",
-  "description": "Notre site de recettes diverses et variées partagées par Kim, Aloïs et leurs proches à l'attention de ces derniers.",
+  "title": "Jeffery Moore",
+  "author": "Jeffery Moore",
+  "headerTitle": "Jeffery Moore",
+  "description": "Thoughts from the field about IT, info and cyber security, development and resilience.",
   "language": "fr-FR",
   "siteUrl": "https://tambouille.vercel.app",
   "siteRepo": "https://github.com/aloisdg/tambouille",
@@ -23,9 +23,15 @@
       "image": "/static/images/kim.png"
     },
     "alois": {
-      "slug": "alois",
-      "name": "Aloïs de Gouvello",
+      "slug": "jeff",
+      "name": "Jeff Moore",
       "email": "alois@outlook.fr",
+      "image": "/static/images/alois.png"
+    },
+    "jeff": {
+      "slug": "jeff",
+      "name": "Jeff Moore",
+      "email": "jeff@jefferywmoore.com",
       "image": "/static/images/alois.png"
     }
   }

@@ -19,9 +19,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
   return (
     <SectionContainer>
       <BlogSeo
-        url={`${siteMetadata.siteUrl}/recettes/${slug}`}
+        url={`${siteMetadata.siteUrl}/blog/${slug}`}
         {...frontMatter}
-        title={`${title} | Recettes`}
+        title={`${title} | blog`}
       />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700 print:xl:divide-white print:xl:dark:divide-white print:xl:divide-y-0">
@@ -140,6 +140,14 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   className="text-blue-500 hover:text-blue-600 dark:text-orange-500 dark:hover:text-orange-400"
                 >
                   &larr; Revenir aux recettes
+                </Link>
+              </div>
+              <div className="pt-4 xl:pt-8">
+                <Link
+                  href="/blog"
+                  className="text-blue-500 hover:text-blue-600 dark:text-orange-500 dark:hover:text-orange-400"
+                >
+                  &larr; My Blog
                 </Link>
               </div>
             </footer>
