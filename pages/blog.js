@@ -20,7 +20,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSeo
-        title="Blog"
+        title="Recipes"
         description={siteMetadata.description}
         url={`${siteMetadata.siteUrl}/blog`}
       />
@@ -28,7 +28,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="Blog entries"
+        title="Recipes"
       />
     </>
   )

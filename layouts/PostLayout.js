@@ -5,10 +5,10 @@ import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/recettes/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/recettes/${slug}`
+    `${siteMetadata.siteUrl}/blog/${slug}`
   )}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -29,7 +29,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
                 <div>
-                  <dt className="sr-only">Publiée le</dt>
+                  <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
@@ -49,11 +49,11 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <Link
               href={`/equipe#${siteMetadata.authors[author].slug}`}
               aria-label={`Voir le profile de ${siteMetadata.authors[author].name}`}
-              title={`Voir le profile de ${siteMetadata.authors[author].name}`}
+              title={`View the profile of ${siteMetadata.authors[author].name}`}
               className="print:hidden"
             >
               <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
-                <dt className="sr-only">Auteur ou autrice</dt>
+                <dt className="sr-only">Author</dt>
                 <dd>
                   <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                     <li className="flex items-center space-x-2 flex-col">
@@ -79,7 +79,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   className="border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-black focus:ring-blue-900 dark:focus:ring-orange-300 focus:outline-none transition-colors duration-200"
                   type="button"
                   onClick={() => window.print()}
-                  title={`imprimer la recette: ${title}`}
+                  title={`Print recipe: ${title}`}
                 >
                   <span role="img" aria-label="imprimer" className="text-3xl">
                     🖨️
@@ -114,20 +114,20 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     {prev && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Recette Précédente
+                          Previous recipe
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:text-orange-500 dark:hover:text-orange-400">
-                          <Link href={`/recettes/${prev.slug}`}>{prev.title}</Link>
+                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Recette suivante
+                          Next recipe
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:text-orange-500 dark:hover:text-orange-400">
-                          <Link href={`/recettes/${next.slug}`}>{next.title}</Link>
+                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
                     )}
@@ -136,20 +136,13 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
-                  href="/recettes"
-                  className="text-blue-500 hover:text-blue-600 dark:text-orange-500 dark:hover:text-orange-400"
-                >
-                  &larr; Revenir aux recettes
-                </Link>
-              </div>
-              <div className="pt-4 xl:pt-8">
-                <Link
                   href="/blog"
                   className="text-blue-500 hover:text-blue-600 dark:text-orange-500 dark:hover:text-orange-400"
                 >
-                  &larr; My Blog
+                  &larr; Back to recipes
                 </Link>
               </div>
+              
             </footer>
           </div>
         </div>

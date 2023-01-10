@@ -13,7 +13,7 @@ const LayoutWrapper = ({ children }) => {
       <div className="flex flex-col justify-between h-screen">
         <header className="flex items-center justify-between py-10 print:hidden">
           <div>
-            <Link href="/" aria-label="nos recettes">
+            <Link href="/" aria-label="my recipes">
               <div className="flex items-center justify-between">
                 <div className="mr-3 text-blue-500 dark:text-orange-500">
                   <Logo className="fill-current" />

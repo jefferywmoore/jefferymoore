@@ -11,16 +11,16 @@ export default function Equipe() {
         url={`${siteMetadata.siteUrl}/equipe`}
       />
       
-      <div id={siteMetadata.authors.alois.slug} className="divide-y">
+      <div id={siteMetadata.authors.jeffery.slug} className="divide-y">
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
             <img
-              src={siteMetadata.authors.alois.image}
+              src={siteMetadata.authors.jeffery.image}
               alt="avatar"
               className="w-48 h-48 rounded-full"
             />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
-              {siteMetadata.authors.alois.name}
+              {siteMetadata.authors.jeffery.name}
             </h3>
             <div className="text-gray-500 dark:text-gray-400">Développeur</div>
             <div className="flex pt-6 space-x-3">

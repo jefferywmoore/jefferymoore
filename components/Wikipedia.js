@@ -4,7 +4,7 @@ const Wikipedia = (wikipediaProps) => {
   let props = {
     ...wikipediaProps,
     host: 'Wikipedia',
-    hosturl: 'https://fr.wikipedia.org',
+    hosturl: 'https://wikipedia.org',
   }
   return <Figure {...props} />
 }
