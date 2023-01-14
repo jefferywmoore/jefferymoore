@@ -1,12 +1,12 @@
 ![tambouille-banner](/public/static/images/twitter-card.png)
 
-# Tambouile
+# TechChef
 
-Tambouille is a personnal french recipes website aimed to my family and acquaintances. It was inspired by an exercise made with my former PO.
+TechChef is a personnal blog with an aim to cultivate and share learnings from my culinary and technology interests, including IT, info and cyber security, development and resilience.
 
 ## Stack
 
-Tambouille uses:
+TechChef uses:
 
 - React
 - Next.js
@@ -15,7 +15,7 @@ Tambouille uses:
 - MDX
 - Husky
 
-and is hosted on Vercel.
+and is hosted on Netlify.
 
 Built with a [template](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog) made by @timlrx. He was inspired by [Lee Robinson's blog](https://github.com/leerob/leerob.io), but focuses only on static site generation. Design is adapted from [Tailwindlabs blog](https://github.com/tailwindlabs/blog.tailwindcss.com).
 
@@ -31,7 +31,7 @@ Built with a [template](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog) 
 
 ## Development
 
-First, run the development server:
+To start your own site, first, run the development server:
 
 ```bash
 npm start
@@ -49,7 +49,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 `data/headerNavLinks.js` - navigation links.
 
-`data/recettes` - add your own recpies.
+`data/blog` - add your own recpies.
 
 `public/static` - store assets such as images and favicons.
 
@@ -109,4 +109,4 @@ Example code to generate the post called "My First Post" in markdown format
 node ./scripts/compose.js "My First Post" .md
 ```
 
-This will generate `./data/recettes/my-first-recipe.md` with pre-filled front matter.
+This will generate `./data/blog/my-first-recipe.md` with pre-filled front matter.
