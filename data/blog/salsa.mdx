@@ -18,17 +18,35 @@ author: jeffery
   alt="Home Made Red and Spicy Tomato Sauce in a terracotta bowl"
 />
 
-Accelerating SBOM success with the help of SLSA!
+Creating the Perfect SLSA Recipe
 
-An interesting article making the case for collaboration between SBOM and SLSA communities to further their shared goals.
+Supply chain Levels for Software Artifacts, or SLSA (pronounced "salsa"), is a framework providing a way to think about the different stages that software goes through, from creation to delivery. Like an ingredient list and steps required to create salsa from a recipe, software has various components and processes that organizations must manage.  
 
-What is an SBOM? A "Software Bill of Materials" is a list of packages and components included in a piece of software. You can think of it like a list of ingredients on a food product.
+Salsa means "sauce" and is primarily a simple, often spicy, blend of uncooked vegetables or fruit, usually a combination of tomatoes, onions, cilantro, and chili peppers. Let's dice this metaphor of creating a salsa recipe a little more to explain how SLSA works.
 
-SBOMs are trying to remove the license or security risk associated with using any particular open source, third-party library or component. Given the enormous adoption growth curve of contributed software with open and permissive licenses, and the growing supply chain and associated attack surface, it’s clearly necessary to understand the province of any library and component being used in your software.
+First, we have the "ingredients" of our software, which are the different components that make up the final product. These can include code, data, and libraries, the corollary to our salsa recipe's base components of tomatoes, onions, and cilantro.
 
-What is SLSA? "Supply chain Levels for Software Artifacts" or SLSA, is a check-list of standards and controls aiming to prevent tampering, improve integrity, and secure packages and infrastructure.
+The ingredients are combined and processed in the "preparation" stage of our salsa recipe. Similarly, software is created in stages of development and testing that need to happen before the final product can be delivered.
 
-If an SBOM is a list of ingredients, then SLSA is similar to food safety handling guidelines. SBOM and SLSA are complementary in that SLSA aims to improve SBOM accuracy and completeness, increase trust in the end result, foster more simplicity in the creation process, and encourage collaboration between communities trying to solve these problems.
+The nature of a software supply chain may start with hardware and end in the production environment, covering a broad scope that includes creating a system root of trust, building secure software, tracking the origin and modification of components used, and securing the associated environments and tools.
+
+For this reason, SLSA is principally concerned with the question of provenance, or the verifiable information about software artifacts (libraries or software components), describing when, where, and how an artifact was produced. Provenance is a measurable and verifiable component of supply chain security and is the basis for the SLSA framework levels.
+
+Supply chain provenance is similar to verifying where each of our salsa ingredients is grown and who was responsible for harvest, packaging, and shipping the product to ensure quality and freshness. Think of it as following our tomatoes from planting, harvest, packaging, and shipping, ensuring the fruit wasn't tampered with en route to our retailer.
+
+image
+
+SLSA's framework attempts to address every step of the software supply chain or the sequence of actions resulting in creating a piece of code (artifact). 
+
+Provenance is a claim that an entity (builder, or grower, if you will) produced one or more software artifacts by following a recipe (referred to in SLSA vocabulary as an "invocation") using specific ingredients or materials. 
+
+SLSA helps organizations identify and mitigate risks in their software supply chain by providing a structure and process for assessing the security of their software components. It allows teams to understand what processes are in place, what risks are present, and how to manage them effectively.
+
+The SLSA framework identifies levels that provide increasing integrity, giving confidence that software hasn't been modified by creating best practice recommendations for each supply chain area of concern. The four levels progress from creating a baseline with documentation of the build process increasing resistance against software component tampering through each level.
+
+Like a salsa recipe, software development also has many components that must be managed and integrated together for a final product. SLSA is a way to ensure the software's integrity at each stage, from creation to delivery, ensuring the security of the software components and supply chain.
+
+Learn more here: https://slsa.dev/
 
 #security #software #growth #supplychain
 ## Ingrédients
