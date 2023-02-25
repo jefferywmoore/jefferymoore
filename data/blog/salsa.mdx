@@ -18,68 +18,62 @@ author: jeffery
   alt="Home Made Red and Spicy Tomato Sauce in a terracotta bowl"
 />
 
-Creating the Perfect SLSA Recipe
+## Creating the Perfect SLSA Recipe
 
-Supply chain Levels for Software Artifacts, or SLSA (pronounced "salsa"), is a framework providing a way to think about the different stages that software goes through, from creation to delivery. Like an ingredient list and steps required to create salsa from a recipe, software has various components and processes that organizations must manage.  
+Supply chain Levels for Software Artifacts, or SLSA (pronounced "salsa"), is a framework providing a way to think about the security and integrity of different stages that software goes through, from creation to delivery. Like an ingredient list and steps required to create salsa from a recipe, software has various components and processes that organizations must manage.  
 
 Salsa means "sauce" and is primarily a simple, often spicy, blend of uncooked vegetables or fruit, usually a combination of tomatoes, onions, cilantro, and chili peppers. Let's dice this metaphor of creating a salsa recipe a little more to explain how SLSA works.
 
 First, we have the "ingredients" of our software, which are the different components that make up the final product. These can include code, data, and libraries, the corollary to our salsa recipe's base components of tomatoes, onions, and cilantro.
 
-The ingredients are combined and processed in the "preparation" stage of our salsa recipe. Similarly, software is created in stages of development and testing that need to happen before the final product can be delivered.
+The ingredients are combined and processed in our salsa recipe's "preparation" stage. Similarly, software is created in stages of development and testing that need to happen before the final product can be delivered.
 
 The nature of a software supply chain may start with hardware and end in the production environment, covering a broad scope that includes creating a system root of trust, building secure software, tracking the origin and modification of components used, and securing the associated environments and tools.
 
-For this reason, SLSA is principally concerned with the question of provenance, or the verifiable information about software artifacts (libraries or software components), describing when, where, and how an artifact was produced. Provenance is a measurable and verifiable component of supply chain security and is the basis for the SLSA framework levels.
-
-Supply chain provenance is similar to verifying where each of our salsa ingredients is grown and who was responsible for harvest, packaging, and shipping the product to ensure quality and freshness. Think of it as following our tomatoes from planting, harvest, packaging, and shipping, ensuring the fruit wasn't tampered with en route to our retailer.
-
-image
-
-SLSA's framework attempts to address every step of the software supply chain or the sequence of actions resulting in creating a piece of code (artifact). 
-
-Provenance is a claim that an entity (builder, or grower, if you will) produced one or more software artifacts by following a recipe (referred to in SLSA vocabulary as an "invocation") using specific ingredients or materials. 
+<Unsplash
+  src="/static/images/blog/supply-chain-model.svg"
+  srcurl="https://slsa.dev/images/supply-chain-model.svg"
+  author="slsa.dev"
+  authorurl="https://unsplash.com/@magictype"
+  alt="Supply chain models"
+/>
 
 SLSA helps organizations identify and mitigate risks in their software supply chain by providing a structure and process for assessing the security of their software components. It allows teams to understand what processes are in place, what risks are present, and how to manage them effectively.
 
+However, in the words of Mike Lieberman, "SLSA is no free lunch." SLSA is not a replacement for your current security standards and procedures. It does not replace the need for static application security testing (SAST) scans or software composition analysis (SCA). Similarly, it does not replace your existing security controls.[1](https://slsa.dev/blog/2022/04/slsa-is-no-free-lunch)
+
+SLSA is principally concerned with the question of provenance, or the verifiable information about software artifacts (libraries or software components), describing when, where, and how an artifact was produced. Provenance is a measurable and verifiable component of supply chain security and is the basis for the SLSA framework levels.
+
+Supply chain provenance is similar to verifying where each of our salsa ingredients is grown and who was responsible for harvest, packaging, and shipping the product to ensure quality and freshness. Think of it as following our tomatoes through the process from planting to purchase, ensuring they are handled only by those interested in product quality and safety until you place them in your shopping cart. Provenance is a claim that an entity (builder, or grower, if you will) produced one or more software artifacts by following a recipe (referred to in SLSA vocabulary as an "invocation") using specific ingredients or materials. 
+
+A software attestation is an authenticated statement (metadata) about a software artifact or collection of software artifacts.[2](https://slsa.dev/attestation-model) Generating attestations throughout your build pipeline creates a clear record of how your software progressed from its code stage to becoming an artifact, including any checks carried out within the pipeline or as part of the more extensive software delivery process. By generating attestations and meeting the SLSA requirements, you can be more confident in your software's provenance. It's important to note that this process alone does not prevent supply chain attacks. However, it does help you ensure that your artifact went through the necessary steps and allows you to pinpoint where things went wrong in the pipeline should an issue arise.
+
 The SLSA framework identifies levels that provide increasing integrity, giving confidence that software hasn't been modified by creating best practice recommendations for each supply chain area of concern. The four levels progress from creating a baseline with documentation of the build process increasing resistance against software component tampering through each level.
+
+Essentially, SLSA provides assurance that a specific set of inputs, such as source code, libraries, and software packages, have resulted in specific outputs, like scan reports and software bill of materials (SBOMs), allowing you to trust the portion of the supply chain over which you have direct control. Moreover, the scan reports and SBOMs generated through SLSA also boosts your confidence in your build process, helping detect any upstream supply chain attack. In other words, SLSA helps you trust the portion of the supply chain that you don't control, such as the upstream dependencies.
 
 Like a salsa recipe, software development also has many components that must be managed and integrated together for a final product. SLSA is a way to ensure the software's integrity at each stage, from creation to delivery, ensuring the security of the software components and supply chain.
 
 Learn more here: https://slsa.dev/
 
 #security #software #growth #supplychain
-## Ingrédients
 
-- 1 carotte
-- 2 poivrons
-- 2 oignons
-- 3 gousses d'ail
-- 400g de sauce tomate
-- 4 tomates
-- du sucre
-- du paprika
-- du piment de Cayenne
-- de l'huile d'olive
-- du cumin
-- de la coriandre
+Here is a simple and delicious recipe for fresh salsa.
+## Ingredients
 
-## Préparation
+- 4 medium ripe tomatoes, chopped
+- 1/2 medium red onion, finely chopped
+- 1 jalapeño pepper, seeded and finely chopped
+- 2 garlic cloves, minced
+- 1/4 cup fresh cilantro, chopped
+- Juice of 1 lime
+- Salt and pepper to taste
 
-- Éplucher puis découper les oignons
-- Découper le tofu en petit carrée
-- Placer une casserole sur un feu moyen avec de l'huile d'olive
-- Dorer les oignons et le tofu dans l'huile
-- Découper les poivrons, la carotte et les tomates en tout petit morceau
-- Ajouter, les poivrons, la carotte et les tomates dans la casserole
-- Éplucher, presser puis ajouter l'aïl dans la casserole
-- Baisser légèrement le feu, couvrir et laisser cuire tranquillement
-- Ajouter le coulis de tomate, le sucre, le paprika, le cumin, la coriandre et le piment de Cayenne
-- Ajuster les épices selon envie
-- Baisser à feu doux, couvrir et laisser barboter pendant au moins 30 minutes
-- Remuer tout du long pour pas que ça accroche au fond
-- Laisser refroidir
+## Instructions 
 
-## Consommation
-
-À manger frais avec des nachos ou en tant que garniture dans un burrito
+In a large bowl, combine the chopped tomatoes, red onion, jalapeño pepper, minced garlic, and fresh cilantro.
+Squeeze the juice of one lime over the ingredients in the bowl and stir to combine.
+Season with salt and pepper to taste.
+Chill in the refrigerator for at least 30 minutes to allow the flavors to meld together.
+Serve with tortilla chips, on tacos, or with any other Mexican-inspired dishes.
+Enjoy your homemade salsa!

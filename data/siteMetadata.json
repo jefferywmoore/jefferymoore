@@ -6,7 +6,7 @@
   "language": "fr-FR",
   "siteUrl": "https://techchef.io",
   "siteRepo": "https://github.com/jefferywmoore/techchef",
-  "image": "/static/images/alois.png",
+  "image": "/static/images/jeff-ai.png",
   "socialBanner": "/static/images/twitter-card.png",
   "email": "jeff@jefferywmoore.com",
   "github": "https://github.com/jefferywmoore",
@@ -26,7 +26,7 @@
       "slug": "jeffery",
       "name": "Jeffery Moore",
       "email": "jeff@jefferywmoore.com",
-      "image": "/static/images/alois.png"
+      "image": "/static/images/jeff-ai.png"
     }
   }
 }

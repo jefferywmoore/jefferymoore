@@ -4,26 +4,16 @@ const Figure = ({ alt, src, srcurl, author, authorurl, host, hosturl }) => {
   if (!alt || !src || !author || !authorurl || !host || !hosturl) return null
 
   let image
-  // image = (
-  //   <Image
-  //     alt={alt}
-  //     src={src}
-  //     className="rounded" // object-cover object-center"
-  //     style={{ margin: '0' }}
-  //     // layout="fill"
-  //     width={dimensions.width}
-  //     height={dimensions.height}
-  //   />
-  // )
+
   image = <img className="rounded w-full object-cover object-center" style={{ margin: '0', maxHeight: '480px' }} alt={alt} src={src} />
   let caption = (
     <figcaption className="text-center">
-      Photo par{' '}
-      <a href={authorurl} title={`Découvrir le profile de ${author}`}>
+      Photo by {' '}
+      <a href={authorurl} title={`Discover the profile of ${author}`}>
         {author}
       </a>{' '}
-      de{' '}
-      <a href={hosturl} title={`Ouvrir ${host}`}>
+      from {' '}
+      <a href={hosturl} title={`Open ${host}`}>
         {host}
       </a>
     </figcaption>
@@ -31,7 +21,7 @@ const Figure = ({ alt, src, srcurl, author, authorurl, host, hosturl }) => {
   return (
     <figure className="print:hidden flex flex-col items-center relative">
       {srcurl ? (
-        <a className="w-full" href={srcurl} title="Voir l'image">
+        <a className="w-full" href={srcurl} title="See image">
           {image}
         </a>
       ) : (
